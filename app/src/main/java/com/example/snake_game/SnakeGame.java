@@ -46,7 +46,7 @@ class SnakeGame extends SurfaceView implements Runnable {
     private int mScore;
     private int highScore;
     private final SurfaceHolder mSurfaceHolder;
-    private final paint mPaint;
+    private final Paint mPaint;
     private final Snake mSnake;
     private FoodFactory foodfactory;
     private ArrayList<Food> FOOD;
