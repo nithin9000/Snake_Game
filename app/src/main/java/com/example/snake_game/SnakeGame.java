@@ -65,6 +65,11 @@ class SnakeGame extends SurfaceView implements Runnable {
         gameContext = context;
         highScore = 0;
 
+        findGameSize(size);
+        loadBackground(context);
+        loadScreens(context);
+        initalizeSoundPool(context);
 
+        FOOD = new ArrayList<FOOD>;
     }
 }
