@@ -5,18 +5,22 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
 
-class Apple extends Food {
-    Apple(Context context,Point sr,int s){
+public class GoldenApple extends Food{
+
+    GoldenApple(Context context,Point sr,int s){
+        this.location = new Point();
         this.mSpawnRange = sr;
         this.mSize = s;
-        this.location = new Point();
         this.location.x = -10;
-        this.value = 10;
-        this.mBitmap = BitmapFactory = BitmapFactory.decodeResource(context.getResources(),R.drawable.apple);
+        this.value = 50;
+        this.mBitmap = BitmapFactory.decodeResource(context.getResources(),R.drawable.golden);
         this.mBitmap = Bitmap.createScaledBitmap(this.mBitmap,s,s,false);
         this.spawn();
     }
-
     @Override
-    public void applyMod(SnakeGame game, Snake snake){game.increaseScore(value);}
+
+    public void applyMod(SnakeGame game,Snake snake){
+        game.increaseScore(value);
+        this.spawn();
+    }
 }

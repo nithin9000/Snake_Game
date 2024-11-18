@@ -18,7 +18,7 @@ public class SnakeActivity extends Activity {
         display.getSize(size);
 
         mSnakeGame = new SnakeGame(this,size);
-        setCOntentView(mSnakeGame);
+        setContentView(mSnakeGame);
     }
 
     @Override

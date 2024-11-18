@@ -121,7 +121,8 @@ public class Snake {
                     p.y -= p.y%mSegmentSize;
                     heading = nextHeading;
                 }else{
-                    p.y –= Speed;
+                    p.y -= Speed;
+
                 }
                 break;
             case RIGHT:
@@ -258,7 +259,7 @@ public class Snake {
                     nextHeading = Heading.RIGHT;
                     break;
                 case RIGHT:
-                    nextHeading = Heading.UP:
+                    nextHeading = Heading.UP;
                     break;
             }
         }
